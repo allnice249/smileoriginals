@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Smile Originals | Live Before You Leave</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="public/css/style.css">
+</head>
+
+<body>
+
+  <!-- HEADER / NAVBAR -->
+  <header class="navbar">
+    <div class="logo">Smile Originals</div>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">Categories</a>
+      <a href="#">Smile Rewards</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Account</a>
+      <a href="#">Cart</a>
+    </nav>
+  </header>
+
+  <!-- ===== HERO BANNER ===== -->
+  <section class="hero">
+
+    <!-- VIDEO GOES HERE -->
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="videos/hero.mp4" type="video/mp4">
+    </video>
+
+    <!-- HERO CONTENT -->
+    <div class="hero-content">
+      <h1>Smile Originals</h1>
+      <p>Live before you leave.</p>
+      <a href="shop.html" class="btn">Shop Now</a>
+    </div>
+
+  </section>
+
+  <section class="new-drops">
+
+    <!-- TEXT (CENTERED) -->
+    <div class="new-drops-header">
+      <h2>NEW DROPS</h2>
+      <p class="drops-sub">
+        Stand out with our latest collection — bold designs, premium fabrics,
+        and street-ready fits. Once they’re gone, they’re gone.
+      </p>
+    </div>
+
+    <div class="drops-grid">
+
+      <!-- CARD 1 -->
+      <div class="drop-card" onclick="openModal(0)">
+        <span class="badge">NEW</span>
+        <div class="drop-img">
+          <img src="public/images/drop1-1.jpg" />
+        </div>
+
+        <div class="drop-info">
+          <h3>Shadow Drip</h3>
+          <p class="desc">Minimal hoodie with dark tones and premium finish.</p>
+
+          <div class="drop-bottom">
+            <span class="price">GHS 420</span>
+            <div class="actions">
+              <button class="buy-btn">Buy Now</button>
+              <i class="cart-icon">🛒</i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="drop-card" onclick="openModal(1)">
+        <span class="badge">NEW</span>
+        <div class="drop-img">
+          <img src="public/images/drop2-1.jpg" />
+        </div>
+
+        <div class="drop-info">
+          <h3>Urban Phantom</h3>
+          <p class="desc">Oversized hoodie inspired by city nights.</p>
+
+          <div class="drop-bottom">
+            <span class="price">GHS 390</span>
+            <div class="actions">
+              <button class="buy-btn">Buy Now</button>
+              <i class="cart-icon">🛒</i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="drop-card" onclick="openModal(2)">
+        <span class="badge">NEW</span>
+        <div class="drop-img">
+          <img src="public/images/drop3-1.jpg" />
+        </div>
+
+        <div class="drop-info">
+          <h3>Neon Rebellion</h3>
+          <p class="desc">Bold streetwear with attitude.</p>
+
+          <div class="drop-bottom">
+            <span class="price">GHS 450</span>
+            <div class="actions">
+              <button class="buy-btn">Buy Now</button>
+              <i class="cart-icon">🛒</i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <div class="modal" id="productModal">
+    <div class="modal-box">
+      <span class="close" onclick="closeModal()">×</span>
+
+      <img id="modalImg" />
+
+      <h3 id="modalName"></h3>
+      <p id="modalPrice"></p>
+
+
+      <!-- CATEGORIES -->
+      <section class="categories">
+        <div class="category">Men</div>
+        <div class="category">Women</div>
+        <div class="category">Unisex</div>
+        <div class="category">New Arrivals</div>
+        <div class="category">Best Sellers</div>
+      </section>
+
+
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p>© 2026 Smile Originals. All rights reserved.</p>
+      </footer>
+
+</body>
+
+</html>
